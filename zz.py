@@ -3,10 +3,12 @@ from discord.ext import commands
 import requests
 import pytz
 from datetime import datetime
+import os
 
 API_KEY = "919ebabcc97ed4cb3fd75bdc16497430"
 CITY_ID = "1835848"
-TOKEN = "MTIyODYyNzEzNzA0OTY2MTQ0MA.GaKZDx.1Jeww2LeDcpXzNHDUSmUInTaUUNC2ELhQWIEew"
+access_token = os.environ["BOT_TOKEN]
+TOKEN = "access_token"
 
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix='?    ', intents=intents)
